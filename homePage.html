@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Game Mania</title>
+<link rel="icon" type="image/x-icon" href="https://gamemania.w3spaces.com/Images/Game_Mania_logo.png?bypass-cache=30042224">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://gamemania.w3spaces.com/StyleSheetsCSS/styleshomepage.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://gamemania.w3spaces.com/JavaScript/scriptsHomepage.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<style>
+/* Only use in swiper carousel */
+.mainConteiner {
+  max-width: 1080px;
+  margin: auto; 
+}
+.swiper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0; 
+}
+
+.img-wrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 70%; 
+}
+.img-wrapper .imageCarousel {
+  width: 100%;
+  max-width: 350px;
+  max-height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 6px; 
+}
+.swiper-button-next, .swiper-button-prev {
+  color: #87CEFA;
+  position: absolute; /* use this sheets to customize the arrows */
+  top: 50%;
+  padding: 16px;
+  margin-top: -100px;
+  
+}
+.swiper-button-next:hover {
+  color: #4682B4;
+}
+.swiper-button-prev:hover {
+  color: #4682B4;
+}
+.swiper-pagination span{
+  background-color: #4682B4;
+}
+
+</style>
+
+</head>
+<body style="font-family: Arial, sans-serif;">
+
+<!-- Acessibility Bar -->
+
+<div class="accessibilityBar">
+  <span style="color: white; font-size: 15px;"><b>Accessibility</b></span>
+  <i id="switch" class="fa fa-adjust" style="color: white; font-size: 20px; padding: 5px;" title="Dark mode"></i>
+  <i id="megaText" class="fa fa-text-height" style="color: white; font-size: 20px; padding: 5px;" title="Font size"></i>
+</div>
+
+<!-- Header -->
+
+<div class="header">
+  <a href="https://gamemania.w3spaces.com/" target="_self"><img src="https://gamemania.w3spaces.com/Images/Game_Mania_logo2.png?bypass-cache=29056499" alt="Game Mania Logo" heigth="100" style="width:100%; max-width:300px;"></a>
+</div>
+
+<!-- Navbar -->
+
+<div class="navbarconteiner">
+<div class="navbar" id="myTopNav">
+  <a href="https://gamemania.w3spaces.com/News/Main_page_News.html" target="_self">News</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="dropButton()">PlayStation
+    <i class="fa fa-angle-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="https://gamemania.w3spaces.com/PlayStationNews/PlayStation_News_Page.html" target="_self">News</a>
+  </div>
+  </div>
+    <div class="dropdown">
+  <button class="dropbtn" onclick="dropButton2()">Xbox
+    <i class="fa fa-angle-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown2">
+    <a href="https://gamemania.w3spaces.com/Xboxnews/Xbox_News_page.html" target="_self">News</a>
+  </div>
+  </div>
+    <div class="dropdown">
+  <button class="dropbtn" onclick="dropButton3()">Nintendo
+    <i class="fa fa-angle-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown3">
+    <a href="https://gamemania.w3spaces.com/NintendoNews/Nintendo_news.html" target="_self">News</a>
+  </div>
+  </div>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="respNav()">&#9776;</a>
+</div>
+</div>
+
+<!-- Latest News -->
+
+<div class="mainConteiner">
+
+<div class="row">
+  <div class="column">
+    <h1>Latest News&nbsp;<span><i class="fa fa-newspaper-o"></i></span></h1>
+  </div>
+</div>
+
+<!-- Slide Show -->
+
+<div class="row">
+  <div class="columnSS">
+   <div class="slideshow-container">
+   
+       <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <a href="./Xboxnews/Microsoft_Activision_deal.html" target="_self"><img class="imageSlideShow" src="../Images/xbox/microsoft_activision.jpg" style="width:100%"></a>
+    <div class="text"><a class="SlideShow" href="./Xboxnews/Microsoft_Activision_deal.html" target="_self">Microsoft finally bought Activision Blizzard </a></div>
+  </div>
+   
+    <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <a href="./PlayStationNews/Final_Fantasy_7_news.html" target="_self"><img class="imageSlideShow" src="https://gamemania.w3spaces.com/Images/PlayStation/Final_fantasy_7_Rebirth.jpg" style="width:100%"></a>
+    <div class="text"><a class="SlideShow" href="./PlayStationNews/Final_Fantasy_7_news.html" target="_self">Final Fantasy VII Rebirth reveals your launch date</a></div>
+  </div>
+   
+    <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <a href="https://gamemania.w3spaces.com/NintendoNews/Nintendo_Switch2_news.html" target="_self"><img class="imageSlideShow" src="https://gamemania.w3spaces.com/Images/Nintendo/NintendoSwitch2.jpg" style="width:100%"></a>
+    <div class="text"><a class="SlideShow" href="https://gamemania.w3spaces.com/NintendoNews/Nintendo_Switch2_news.html" target="_self">Some rumours says that Nintendo can announced Nintendo Switch 2 on Gamescom</a></div>
+  </div>
+    
+    <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <a href="https://gamemania.w3spaces.com/PlayStationNews/PlayStation_PLus_RiseUp_Prices.html" target="_self"><img class="imageSlideShow" src="https://gamemania.w3spaces.com/Images/PlayStation/playStation_plus.jpeg" style="width:100%"></a>
+    <div class="text"><a class="SlideShow" href="https://gamemania.w3spaces.com/PlayStationNews/PlayStation_PLus_RiseUp_Prices.html" target="_self">PlayStation Plus rise up the prices of their plans</a></div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>	
+  </div>
+
+ </div>
+</div>
+
+<!-- End Slide Show -->
+
+<div class="row">
+  <div class="column33">
+    <div class="boxAnnouncedTrailers2">
+     <iframe src="https://www.youtube.com/embed/oyZY_BiTmd8" allowfullscreen="true"></iframe>
+     </div>
+    <h4>Call of Duty Black Ops 6 reveals a gameplay trailer</h4>
+	
+	<p>Check the new trailer above:</p>
+	
+  </div>
+	 
+    <div class="column33">
+     <div class="boxAnnouncedTrailers2">
+      <iframe src="https://www.youtube.com/embed/QP_wXv2ErgI" allowfullscreen="true"></iframe>
+	 </div>
+	  <h4>Star Wars Outlaws shows a new gameplay trailer</h4>
+	
+	  <p>Check out the trailer above:</p>
+	
+  </div>
+
+    <div class="column33">
+     <div class="boxAnnouncedTrailers2">
+      <iframe src="https://www.youtube.com/embed/22iqF31v8Lg" allowfullscreen="true"></iframe>
+    </div>
+     <h4>This Week on Xbox</h4>
+	
+	    <p>Check out the announce trailer above:</p>
+	
+  <!-- view more button -->
+        
+    <button type="button" class="viewBt"><a class="two" href="https://gamemania.w3spaces.com/News/Main_page_News.html" target="_self"><strong>View more</strong></a></button>
+    </div>
+</div>
+
+<!-- End latest news -->
+
+<hr class="colorline">
+
+<!-- PlayStation section -->
+
+<div class="row">
+  <div class="column">
+    <h1 id="playstationSection">PlayStation News&nbsp;<span><i class="fa fa-newspaper-o"></i></span></h1>
+  </div>
+</div>
+
+<!-- news -->
+
+<!-- Carousel -->
+
+<div class="mainConteiner">
+<div class="swiper"> 
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="img-wrapper">
+       <a href="./PlayStationNews/Final_Fantasy_7_news.html" target="_self"><img class="imageCarousel" src="https://gamemania.w3spaces.com/Images/PlayStation/Final_fantasy_7_Rebirth.jpg" alt="Final Fantasey VII Ribirth image"></a>
+        <h3><a class="one" href="./PlayStationNews/Final_Fantasy_7_news.html" target="_self">Final Fantasy VII Rebirth reveals your launch date</a></h3>
+        
+        <p>During the last State of play Square Enix reveals the launch date of Final Fantasy VII Rebirth.</p>
+       </div>
+   </div>
+    <div class="swiper-slide">
+      <div class="img-wrapper">
+       <a href="https://gamemania.w3spaces.com/PlayStationNews/PlayStation_PLus_RiseUp_Prices.html" target="_self"><img class="imageCarousel" src="https://gamemania.w3spaces.com/Images/PlayStation/playStation_plus.jpeg" alt="Image PlayStation Plus"></a>
+         <h3><a class="one" href="https://gamemania.w3spaces.com/PlayStationNews/PlayStation_PLus_RiseUp_Prices.html" target="_self">PlayStation Plus rise up the prices of their plans</a></h3>
+        
+        <p>Unfortunately for the gamers PlayStation announces rise up the prices of their plans.</p>
+       </div>
+     </div>
+         <div class="swiper-slide">
+      <div class="img-wrapper">
+       <a href="https://gamemania.w3spaces.com/PlayStationNews/PlayStation_Devices.html" target="_self"><img class="imageCarousel" src="https://gamemania.w3spaces.com/Images/PlayStation/Captura_1.png" alt="Image PlayStation Devices"></a>
+         <h3><a class="one" href="https://gamemania.w3spaces.com/PlayStationNews/PlayStation_Devices.html" target="_self">Sony announces news hardware devices</a></h3>
+        
+        <p>After the previous announce on the State of play, Sony finally confirm news devices.</p>
+       </div>
+     </div>
+    <div class="swiper-slide">
+      <div class="img-wrapper">
+       <a href="https://gamemania.w3spaces.com/PlayStationNews/Final_Fantasy_16_news.html" target="_self"><img class="imageCarousel" src="../Images/PlayStation/Final_fantasy_16_up.png" alt="Image Final Fantasy 16"></a>
+         <h3><a class="one" href="https://gamemania.w3spaces.com/PlayStationNews/Final_Fantasy_16_news.html" target="_self">Final Fantasy XVI is overheating PS5</a></h3>
+        
+        <p>Some users is reporting that Final Fantasy XVI is overheating your consoles.</p>
+       </div>
+     </div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+</div>
+
+<!-- End carousel -->
+     
+     <!-- View button -->
+     
+      <button type="button" class="viewBt"><a class="two" href="https://gamemania.w3spaces.com/PlayStationNews/PlayStation_News_Page.html" target="_self"><strong>View more</strong></a></button>
+	  
+<!-- End news section -->
+
+
+
+<div class="row">
+  <div class="column">
+    <h1 id="playstationSection">PlayStation Announce Trailers&nbsp;<span><i class="fa fa-film"></i></span></h1>
+  </div>
+</div>
+
+<!-- videos -->
+
+<div class="row">
+  <div class="column">
+    <div class="boxAnnouncedTrailers">
+    <iframe width="100%" height="300" src="https://www.youtube.com/embed/baOokyTUX_k" allowfullscreen="true"></iframe>
+    </div>
+	 <h4>Ballad of Antara Announcement Trailer</h4>
+	
+	   <p>Check out the trailer above:</p>
+	</div>
+  
+   <div class="column">
+    <div class="boxAnnouncedTrailers">
+     <iframe width="100%" height="300" src="https://www.youtube.com/embed/eqEGZ5AKUwc" allowfullscreen="true"></iframe>
+     </div>
+	  <h4>Where Winds Meet Announce Trailer</h4>
+	
+	   <p>Check out the trailer above:</p>	
+  </div>
+</div>
+
+<!-- Launchs -->
+
+<!--
+<div class="row">
+  <div class="column">
+   <h1>PlayStation Launchs&nbsp;<span><i class="fa fa-bullhorn"></i></span></h1>
+  </div>
+</div>
+
+<div class="row">
+    <div class="column33">
+   <h3>Final Fantsy 7 Rebirth will be release on February 29, 2024</h3>
+   <p>Check the countdown below:</p>
+    <div class="cardCountdown">
+     <img class="imageCardCD" src="https://gamemania.w3spaces.com/Images/PlayStation/Final_fantasy_7_Rebirth.jpg" alt="FF imgage" height="200" style="width:100%">
+     <p id="cardFF7"></p>
+   </div>
+ </div>
+ 
+    <div class="column33">
+   <h3>Rise of the Ronin will be release on March 22, 2024</h3>
+   <p>Check the countdown below:</p>
+    <div class="cardCountdown">
+     <img class="imageCardCD" src="https://gamemania.w3spaces.com/Images/PlayStation/rise-of-the-ronin_image.jpg" alt="Rise of Ronin image" height="200" style="width:100%">
+     <p id="cardRiseRonin"></p>
+   </div>
+ </div>
+</div>
+-->
+
+<!-- End PlayStation section -->
+
+<hr class="colorline">
+
+<!-- Xbox section -->
+
+<div class="row">
+  <div class="column">
+    <h1 id="xboxSection">Xbox News&nbsp;<span><i class="fa fa-newspaper-o"></i></span></h1>
+  </div>
+</div>
+
+<!-- news -->
+
+<!-- Carousel -->
+
+<div class="mainConteiner">
+<div class="swiper"> 
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="img-wrapper">
+       <a href="./Xboxnews/Microsoft_Activision_deal.html" target="_self"><img class="imageCarousel" src="../Images/xbox/microsoft_activision.jpg" alt="microsoft_activision"></a>
+        <h3><a class="one" href="./Xboxnews/Microsoft_Activision_deal.html" target="_self">Microsoft finally bought Activision Blizzard</a></h3>
+        
+        <p>After a long battle Microsoft finally got to buy Activision Blizzard.</p>
+       </div>
+   </div>
+    <div class="swiper-slide">
+      <div class="img-wrapper">
+       <a href="./Xboxnews/Xbox_Series_X_all_digital_news.html" target="_self"><img class="imageCarousel" src="../Images/xbox/Xbox_series.png" alt="Xbox series X image"></a>
+         <h3><a class="one" href="./Xboxnews/Xbox_Series_X_all_digital_news.html" target="_self">Xbox Series X slim?</a></h3>
+        
+        <p>Rumors says Microsoft maybe launch a Xbox Series X all digital.</p>
+       </div>
+     </div>
+     <div class="swiper-slide">
+      <div class="img-wrapper">
+       <a href="https://gamemania.w3spaces.com/Xboxnews/Solar_Ash_news.html" target="_self"><img class="imageCarousel" src="https://gamemania.w3spaces.com/Images/xbox/Solar_ash.jpg" alt="Solar Ash image"></a>
+         <h3><a class="one" href="https://gamemania.w3spaces.com/Xboxnews/Solar_Ash_news.html" target="_self">Solar Ash arrive to Game Pass on September 14, 2023</a></h3>
+        
+        <p>Game Pass add a new game to their library.</p>
+       </div>
+     </div>
+	 <div class="swiper-slide">
+      <div class="img-wrapper">
+       <a href="https://gamemania.w3spaces.com/Xboxnews/Starfield_news.html" target="_self"><img class="imageCarousel" src="https://gamemania.w3spaces.com/Images/xbox/Starfield_image.png" alt="Starfield image"></a>
+         <h3><a class="one" href="https://gamemania.w3spaces.com/Xboxnews/Starfield_news.html" target="_self">A glitch allows user to get infinite money in Starfield</a></h3>
+        
+        <p>An youtuber found out a way to get infinite money in Starfield.</p>
+       </div>
+     </div>
+    <div class="swiper-slide">
+      <div class="img-wrapper">
+       <a href="https://gamemania.w3spaces.com/Xboxnews/Microsoft_and_Sony_make_a_deal_to_keep_Call_of_Duty_on_PlayStation_for_10_years.html" target="_self"><img class="imageCarousel" src="../Images/xbox/Xbox_Image.png" alt="Image Sony and Microsoft"></a>
+         <h3><a class="one" href="https://gamemania.w3spaces.com/Xboxnews/Microsoft_and_Sony_make_a_deal_to_keep_Call_of_Duty_on_PlayStation_for_10_years.html" target="_self">Microsoft and Sony make a deal to keep Call of Duty on PlayStation for 10 years</a></h3>
+        
+        <p>After a long battle, finally Sony and Microsoft make a deal to keep Call of Duty on Playstation for next 10 years.</p>
+       </div>
+     </div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+</div>
+
+<!-- End Carousel -->
+
+  
+  <button type="button" class="viewBt"><a class="two" href="https://gamemania.w3spaces.com/Xboxnews/Xbox_News_page.html" target="_self"><strong>View more</strong></a></button>
+
+
+<!--videos -->
+
+<div class="row">
+  <div class="column">
+    <h1 id="xboxSection">Xbox Announce Trailers&nbsp;<span><i class="fa fa-film"></i></span></h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="boxAnnouncedTrailers">
+     <iframe width="100%" height="300" src="https://www.youtube.com/embed/ofUi9DR9sc4" allowfullscreen="true"></iframe>
+	</div>
+      <h4>Perfect Dark shows the first gameplay</h4>
+	
+    <p>Check out the trailer above:</p>
+	
+  </div>
+
+  <div class="column">
+    <div class="boxAnnouncedTrailers">
+     <iframe width="100%" height="300" src="https://www.youtube.com/embed/mzDPNi77F24" allowfullscreen="true"></iframe>
+	</div>
+      <h4>Microsoft shows three news Xbox Consoles</h4>
+	
+    <p>Check out the news devices on the trailer above:</p>
+	
+  </div>
+</div>
+
+<!-- Launchs -->
+
+<!--
+<div class="row">
+  <div class="column">
+   <h1>Xbox Launchs&nbsp;<span><i class="fa fa-bullhorn"></i></span></h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+   <h3>Forza Motorsport will be release on October 10, 2023</h3>
+     <p>Check the countdown below:</p>
+      <div class="cardCountdown">
+
+     <p></p>
+   </div>
+ </div>
+</div>
+-->
+
+<!-- End Xbox section -->
+
+<hr class="colorline">
+
+<!-- Nintendo section  -->
+
+<div class="row">
+  <div class="column">
+    <h1 id="nintendoSection">Nintendo News&nbsp;<span><i class="fa fa-newspaper-o"></i></span></h1>
+  </div>
+</div>
+
+<!-- news -->
+
+<!-- Carousel -->
+
+<div class="mainConteiner">
+<div class="swiper"> 
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="img-wrapper">
+       <a href="https://gamemania.w3spaces.com/NintendoNews/Nintendo_Switch2_news.html" target="_self"><img class="imageCarousel" src="https://gamemania.w3spaces.com/Images/Nintendo/NintendoSwitch2.jpg" alt="Nintendo Sitch 2 image"></a>
+        <h3><a class="one" href="https://gamemania.w3spaces.com/NintendoNews/Nintendo_Switch2_news.html" target="_self">Some rumours says that Nintendo can announced Nintendo Switch 2 on Gamescom</a></h3>
+        
+        <p>According with some insiders Nintendo could announce a new version of the Nintendo Switch on Gamescon.</p>
+       </div>
+   </div>
+    <div class="swiper-slide">
+      <div class="img-wrapper">
+       <a href="https://gamemania.w3spaces.com/NintendoNews/Red_dead_Redemption_news.html" target="_self"><img class="imageCarousel" src="https://gamemania.w3spaces.com/Images/Red_dead_redemption.jpg" alt="Red dead Redemption" alt="Image Red dead Redemption"></a>
+         <h3><a class="one" href="https://gamemania.w3spaces.com/NintendoNews/Red_dead_Redemption_news.html" target="_self">Red dead redemption will be released on Nintendo Switch</a></h3>
+        
+        <p>According with Rockstar games, the game will be released on Nintendo Switch, Ps 4 and Xbox one, on August 17, 2023.</p>
+       </div>
+     </div>
+         <div class="swiper-slide">
+      <div class="img-wrapper">
+       <a href="https://gamemania.w3spaces.com/NintendoNews/Nintendo_Direct_news.html" target="_self"><img class="imageCarousel" src="https://gamemania.w3spaces.com/Images/Nintendo_direct_2.jpg" alt="Nintendo Direct"></a>
+         <h3><a class="one" href="https://gamemania.w3spaces.com/NintendoNews/Nintendo_Direct_news.html" target="_self">Nintendo Direct 06.21.2023</a></h3>
+        
+        <p>Watch the most important announces of the event.</p>
+       </div>
+     </div>
+    <div class="swiper-slide">
+      <div class="img-wrapper">
+       <a href="#" target="_self"><img class="imageCarousel" src="https://gamemania.w3spaces.com/Images/Nintendo_direct_2.jpg" alt="Image"></a>
+         <h3><a class="one" href="#" target="_self">Up comming news</a></h3>
+        
+        <p>Up comming...</p>
+       </div>
+     </div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+</div>
+
+<!-- End Carousel -->
+     
+        <button type="button" class="viewBt"><a class="two" href="https://gamemania.w3spaces.com/NintendoNews/Nintendo_news.html" target="_self"><strong>View more</strong></a></button>
+		
+<br>
+
+
+<a onclick="topFunction()"><i id="topArrow"></i></a>
+
+</div>  <!-- end main conteiner -->
+
+<!-- Footer -->
+
+  <div class="footer">
+    <p style="text-align: center;"><a class="three" href="https://gamemania.w3spaces.com/Otherpages/About_us_page.html" target="_self">ABOUT US</a></p>
+    <p style="text-align: center;"><a class="three" href="https://gamemania.w3spaces.com/Otherpages/Contact_pages.html" target="_self">CONTACT</a></p>
+    <p>&copy; 2024 Game Mania. All Rights Reserved.</p>
+ </div>
+ 
+ 
+ <!-- Scripts -->
+
+<script>
+// Navbar
+function dropButton() {  //get the dropdowns elements
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function dropButton2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+function dropButton3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+window.addEventListener('click', function(e) {  //add a event listener 
+  if (!e.target.matches('.dropbtn')) {          //use a condition to the dropdown element
+    var myDropdown = document.getElementById("myDropdown");  //get the dropdown element again
+    if (myDropdown.classList.contains('show')) {          //use a condition to remove a css style
+      myDropdown.classList.remove('show');
+    }
+    
+    var myDropdown2 = document.getElementById("myDropdown2");
+    if (myDropdown2.classList.contains('show')) {
+      myDropdown2.classList.remove('show');
+    }
+    
+    var myDropdown3 = document.getElementById("myDropdown3");
+    if (myDropdown3.classList.contains('show')) {myDropdown3.classList.remove('show');
+    }
+  }
+});
+</script>
+
+<script>
+// Responsive navbar  
+function respNav() {
+  var x = document.getElementById("myTopNav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+
+<script>
+// Top arrow
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $("#topArrow").addClass("fa fa-chevron-circle-up").css({"position" : "fixed", "right" : "20px", "bottom" : "20px", "color" : "#87CEFA", "font-size" : "50px"});
+    } else {
+      $("#topArrow").removeClass("fa fa-chevron-circle-up");
+    }
+  });
+});
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script>
+// Dark mode
+$(document).ready(function() {
+  $("#switch").click(function() {
+    $("body").toggleClass("darkMode");
+  });
+});
+</script>
+
+<script>
+// Text bigger
+$(document).ready(function() {
+  $("#megaText").click(function() {
+    $("body").toggleClass("textBigger");
+  });
+});
+</script>
+
+<script>
+//slide show
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+// Automatic slideshow
+setInterval(function() {
+  plusSlides(1);
+}, 5000);
+</script>
+ 
+<script>
+// Only use on Swiper Carousel
+var swiper = new Swiper('.swiper', {
+  loop: false,
+  autoHeight: true,
+  breakpoints: {
+    720: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+    480: {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    }
+  },   
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+</script>
+
+ <!-- jho400 XD -->
+
+</body>
+</html>
